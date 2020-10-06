@@ -2,28 +2,28 @@
     <div class="mdfun">
     <el-row :gutter="20">
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon1"></i>
                 <br>
                 <span>签证</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon2"></i>
                 <br>
                 <span>主题游</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon3"></i>
                 <br>
                 <span>旅行社</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon4"></i>
                 <br>
                 <span>旅游景点</span>
@@ -32,28 +32,28 @@
     </el-row>
     <el-row :gutter="20">
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon5"></i>
                 <br>
                 <span>旅游指南</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon6"></i>
                 <br>
                 <span>旅游攻略</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon7"></i>
                 <br>
                 <span>百宝箱</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/All">
                 <i class="icon8"></i>
                 <br>
                 <span>更多分类</span>
@@ -100,7 +100,7 @@ export default {
         color: black;
         text-align: center;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 14/Aroundpx;
     }
 }
 </style>

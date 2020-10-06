@@ -1,16 +1,16 @@
 <template>
   <div class="about">
       <el-row class="aboutrow">
-          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col">登录</el-col>
-          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col">订单查询</el-col>
-          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col">帮助中心</el-col>
-          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol">关注我们</el-col>
+          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col"><span @click="Logon">登录</span> </el-col>
+          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col"><span @click="query">订单查询</span></el-col>
+          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col"><span @click="Help">帮助中心</span></el-col>
+          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol"><span @click="sug">关注我们</span></el-col>
       </el-row>
       <el-row class="aboutrow">
-          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col">关于欣欣</el-col>
-          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col">反馈意见</el-col>
-          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col">免责声明</el-col>
-          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol">回到首页</el-col>
+          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col"><span @click="sug">关于欣欣</span></el-col>
+          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col"><span @click="back">反馈意见</span></el-col>
+          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol col"><span @click="sug">免责声明</span></el-col>
+          <el-col :xs="6" :sm="6" :md="6" :xl="6" class="aboutcol"><span @click="tohead">回到首页</span></el-col>
       </el-row>
       <p>欣欣旅游网手机版-m.cncn.com</p>
   </div>
@@ -18,7 +18,28 @@
 
 <script>
 export default {
-    name: 'About'
+    name: 'About',
+    methods:{
+        Logon(){
+            console.log(123)
+            this.$router.push({path:'/Logon'})
+        },
+        query(){
+            this.$router.push({path:'/Query'})
+        },
+        Help(){
+            this.$router.push({path:'/Help'})
+        },
+        sug(){
+            this.$router.push({path:'/Suggest'})
+        },
+        back(){
+            this.$router.push({path:'/FeedBack'})
+        },
+        tohead(){
+            this.$router.push({path: '/'})
+        }
+    }
 }
 </script>
 

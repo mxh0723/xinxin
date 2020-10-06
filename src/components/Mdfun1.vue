@@ -2,28 +2,28 @@
     <div class="mdfun">
     <el-row :gutter="20">
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon1"></i>
                 <br>
                 <span>周边游</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon2"></i>
                 <br>
                 <span>国内游</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon3"></i>
                 <br>
                 <span>出境游</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon4"></i>
                 <br>
                 <span>目的地</span>
@@ -32,28 +32,28 @@
     </el-row>
     <el-row :gutter="20">
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon5"></i>
                 <br>
                 <span>旅游定制</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Select">
                 <i class="icon6"></i>
                 <br>
                 <span>欣欣优选</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon7"></i>
                 <br>
                 <span>酒店</span>
             </router-link>
         </el-col>
         <el-col :xs="6" :sm="6" :md="6" :xl="6">
-            <router-link to="">
+            <router-link to="/Around">
                 <i class="icon8"></i>
                 <br>
                 <span>景点门票</span>

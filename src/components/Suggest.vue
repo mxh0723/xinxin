@@ -12,15 +12,15 @@
                 <i class="iconhome"></i>
                 欣欣首页
             </router-link>
-            <router-link to="" class="routerlink">
+            <router-link to="/All" class="routerlink">
                 <i class="iconall"></i>
                 全部分类
             </router-link>
-            <router-link to="" class="routerlink">
+            <router-link to="/Sos" class="routerlink">
                 <i class="iconsos"></i>
                 搜索
             </router-link>
-            <router-link to="" class="routerlink">
+            <router-link to="/Logon" class="routerlink">
                 <i class="iconmy"></i>
                 我的欣欣
             </router-link>

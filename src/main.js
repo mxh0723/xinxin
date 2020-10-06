@@ -8,7 +8,9 @@ import router from './router'
 import store from './store/store.js'
 import wcSwiper from 'wc-swiper'
 import 'wc-swiper/style.css'
+import axios from 'axios'
 
+Vue.prototype.axios = axios
 Vue.use(wcSwiper)
 Vue.use(ElementUI)
 Vue.config.productionTip = false
