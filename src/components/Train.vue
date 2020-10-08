@@ -49,7 +49,7 @@
         />
       </p>
       <p>
-        <span class="lef ">出发日期</span>
+        <span class="lef">出发日期</span>
         <span class="rig">只搜高铁/动车</span>
       </p>
       <p>
@@ -66,12 +66,14 @@
           class="switch"
         ></el-switch>
       </p>
-      <input type="submit" class="Btn" value="查询" />
+      <input type="submit" class="Btn" value="查询" @click="subBtn" />
     </div>
     <div class="sub">
       <p>热门站点</p>
       <div class="txt">
-        <span v-for="(item, i) in items" :key="i">{{ item }}</span>
+        <span v-for="(item, i) in items" :key="i" @click="ToNull">{{
+          item
+        }}</span>
       </div>
     </div>
     <div class="pic">
@@ -80,25 +82,33 @@
     <div class="sub">
       <p>热门车次</p>
       <div class="txt">
-        <span v-for="(item, i) in items1" :key="i">{{ item }}</span>
+        <span v-for="(item, i) in items1" :key="i" @click="ToNull">{{
+          item
+        }}</span>
       </div>
     </div>
     <div class="sub1">
       <p>热门火车票代售点</p>
       <div class="txt">
-        <span v-for="(item, i) in items2" :key="i">{{ item }}</span>
+        <span v-for="(item, i) in items2" :key="i" @click="ToNull">{{
+          item
+        }}</span>
       </div>
     </div>
     <div class="sub1">
       <p>热门路线</p>
       <div class="txt">
-        <span v-for="(item, i) in items3" :key="i">{{ item }}</span>
+        <span v-for="(item, i) in items3" :key="i" @click="ToNull">{{
+          item
+        }}</span>
       </div>
     </div>
     <div class="sub">
       <p>分省火车站导航</p>
       <div class="txt">
-        <span v-for="(item, i) in items4" :key="i">{{ item }}</span>
+        <span v-for="(item, i) in items4" :key="i" @click="ToNull">{{
+          item
+        }}</span>
       </div>
     </div>
     <About></About>
@@ -132,7 +142,7 @@ export default {
         "南京",
         "合肥",
         "泉州",
-        "郑州"
+        "郑州",
       ],
       items1: [
         "K706/K070",
@@ -149,7 +159,7 @@ export default {
         "K102",
         "K152/K153",
         "K154/K151",
-        "K161"
+        "K161",
       ],
       items2: [
         "北京",
@@ -163,7 +173,7 @@ export default {
         "厦门",
         "重庆",
         "合肥",
-        "武汉"
+        "武汉",
       ],
       items3: [
         "厦深动车时刻表",
@@ -177,7 +187,7 @@ export default {
         "京广火车时刻表",
         "武广火车时刻表",
         "哈大火车时刻表",
-        "沪昆火车时刻表"
+        "沪昆火车时刻表",
       ],
       items4: [
         "安徽",
@@ -219,15 +229,35 @@ export default {
         "安徽",
         "北京",
         "福建",
-        "甘肃"
-      ]
+        "甘肃",
+      ],
     };
   },
   methods: {
     fun() {
       this.$router.go(-1);
-    }
-  }
+    },
+    subBtn() {
+      if (!this.input) {
+        this.$alert("请输入出发地", {
+          center: true,
+          confirmButtonText: "ok",
+          confirmButtonClass: "nobtn",
+        });
+      } else if (!this.inputend) {
+        this.$alert("请输入目的地");
+      } else if (!this.value) {
+        this.$alert("请选择日期");
+      } else {
+        this.input = "";
+        this.inputend = "";
+        this.value = "";
+      }
+    },
+    ToNull() {
+      this.$router.push({ path: "/Null" });
+    },
+  },
 };
 </script>
 

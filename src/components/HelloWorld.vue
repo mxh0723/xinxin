@@ -177,75 +177,75 @@ export default {
       items: [
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
-        }
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
+        },
       ],
       items1: [
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
-        }
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
+        },
       ],
       items2: [
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
-        }
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
+        },
       ],
       items3: [
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
           img: "../../static/ee.jpg",
-          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）"
-        }
-      ]
+          txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
+        },
+      ],
     };
   },
   methods: {
@@ -257,15 +257,15 @@ export default {
     },
     more() {
       this.$router.push({ path: "/Select" });
-    }
+    },
   },
   components: {
     Mdfun1,
     Mdfun2,
     textScrolling,
     Activity,
-    About
-  }
+    About,
+  },
 };
 </script>
 
@@ -389,10 +389,11 @@ export default {
 .headerinput {
   display: inline-block;
   width: 100%;
+  margin-top: 5px;
 }
 .headture {
   position: absolute;
-  right: 10px;
+  right: 28px;
   display: inline-block;
   padding: 0;
   text-align: center;
