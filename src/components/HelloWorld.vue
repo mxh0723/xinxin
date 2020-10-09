@@ -1,33 +1,23 @@
 <template>
   <div class="hello">
     <div class="el">
-      <el-row :gutter="20">
-        <el-col :xs="2" :sm="2" :md="2" :xl="2">
-          <router-link to="/Suggest" class="logo">
-            <img :src="logo" width="38.40" height="38.40" />
-          </router-link>
-        </el-col>
-        <el-col :xs="5" :sm="5" :md="5" :xl="5">
-          <router-link to="/City" class="city">
-            <span class="linyi">{{ $store.state.city }}</span
-            ><i class="el-icon-arrow-down"></i>
-          </router-link>
-        </el-col>
-        <el-col :xs="14" :sm="14" :md="14" :xl="14">
-          <router-link to="/Sos" class="headerinput">
-            <el-input
-              placeholder="线路/景点门票/旅行社"
-              prefix-icon="el-icon-search"
-            >
-            </el-input>
-          </router-link>
-        </el-col>
-        <el-col :xs="3" :sm="3" :md="3" :xl="3">
-          <router-link to="/Logon" class="headture">
-            <img src="../../static/icon_people.png" alt="" />
-          </router-link>
-        </el-col>
-      </el-row>
+      <router-link to="/Suggest" class="logo">
+        <img :src="logo" width="38.40" height="38.40" />
+      </router-link>
+      <router-link to="/City" class="city">
+        <span class="linyi">{{ $store.state.city }}</span
+        ><i class="el-icon-arrow-down"></i>
+      </router-link>
+      <router-link to="/Sos" class="headerinput">
+        <el-input
+          placeholder="线路/景点门票/旅行社"
+          prefix-icon="el-icon-search"
+        >
+        </el-input>
+      </router-link>
+      <router-link to="/Logon" class="headture">
+        <img src="../../static/icon_people.png" alt="" />
+      </router-link>
     </div>
     <wc-swiper class="wc-swiper">
       <wc-slide class="swiper">
@@ -172,77 +162,77 @@ export default {
   name: "HelloWorld",
   data() {
     return {
-      logo: "/static/icon_cncn.png",
+      logo: "static/icon_cncn.png",
       activeName: "first",
       items: [
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
       ],
       items1: [
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
       ],
       items2: [
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
       ],
       items3: [
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
         {
-          img: "../../static/ee.jpg",
+          img: "static/ee.jpg",
           txt: "三亚蜈支洲纯玩一日游（含接送/门票/船票）",
         },
       ],
@@ -273,9 +263,54 @@ export default {
 <style scoped lang="less">
 .hello {
   width: 100%;
+  overflow: hidden;
   background-color: #f2f2f2;
   .el {
+    width: 100%;
     background-color: #fff;
+    display: flex;
+    .logo {
+      width: 39px;
+      height: 39px;
+      display: inline-block;
+      position: relative;
+      left: 8px;
+    }
+    .city {
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      text-align: center;
+      position: relative;
+      top: -9px;
+      line-height: 56px;
+      padding: 0 12.8px;
+      // margin:0 6.4px ;
+      text-decoration: none;
+      color: #00bf48;
+    }
+    .linyi {
+      font-size: 20px;
+    }
+    .headerinput {
+      display: inline-block;
+      flex: 1;
+      width: 40%;
+      margin-top: 5px;
+    }
+    .headture {
+      display: inline-block;
+      padding: 0;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #00bf48;
+      img {
+        position: relative;
+        top: 5px;
+      }
+    }
   }
   .kandian {
     background-color: #fff;
@@ -289,6 +324,7 @@ export default {
     background-color: #fff;
   }
   .box {
+    width: 100%;
     background-color: #fff;
     .label {
       font-size: 20px;
@@ -318,7 +354,7 @@ export default {
         }
       }
       .text {
-        width: 282px;
+        width: 60%;
         height: 96px;
         float: left;
         .title {
@@ -360,50 +396,6 @@ export default {
     text-align: center;
     font-size: 20px;
     color: #00bf48;
-  }
-}
-.logo {
-  width: 39px;
-  height: 39px;
-  // margin-left: 12.8px;
-  display: inline-block;
-  position: relative;
-  left: 8px;
-}
-.city {
-  display: inline-block;
-  width: 56px;
-  height: 56px;
-  text-align: center;
-  position: relative;
-  top: -9px;
-  line-height: 56px;
-  padding: 0 12.8px;
-  // margin:0 6.4px ;
-  text-decoration: none;
-  color: #00bf48;
-}
-.linyi {
-  font-size: 20px;
-}
-.headerinput {
-  display: inline-block;
-  width: 100%;
-  margin-top: 5px;
-}
-.headture {
-  position: absolute;
-  right: 28px;
-  display: inline-block;
-  padding: 0;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: #00bf48;
-  img {
-    position: relative;
-    top: 5px;
   }
 }
 .wc-swiper {

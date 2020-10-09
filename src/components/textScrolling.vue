@@ -40,24 +40,24 @@ export default {
         "日本爱知县游记：犬山犬山城",
         "郑州游记：登顶嵩山",
         "郑州游记：登顶嵩山少林寺",
-        "日本名古屋游记：名古屋Oasis 21.名古屋电视塔"
+        "日本名古屋游记：名古屋Oasis 21.名古屋电视塔",
       ],
-      number: 0
+      number: 0,
     };
   },
   computed: {
     text() {
       return {
         id: this.number,
-        val: this.arr[this.number]
+        val: this.arr[this.number],
       };
     },
     textunder() {
       return {
         id: this.number + 1,
-        val: this.arr[this.number + 1]
+        val: this.arr[this.number + 1],
       };
-    }
+    },
   },
   mounted() {
     this.startMove();
@@ -75,9 +75,9 @@ export default {
     },
     to() {
       this.$router.push({ path: "/KanDian" });
-    }
+    },
   },
-  components: {}
+  components: {},
 };
 </script>
 
@@ -86,7 +86,7 @@ export default {
   width: 100%;
   height: 64px;
   margin: 12.8px 0;
-  padding: 0 18px;
+  // padding: 0 18px;
   background-image: url(../../static/kandian_bg.png);
   background-repeat: no-repeat;
   background-position: right;

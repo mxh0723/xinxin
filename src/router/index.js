@@ -23,6 +23,7 @@ import Around from "@/components/Around";
 import ToCity from "@/components/ToCity";
 import KanDian from "@/components/KanDian";
 import Train from "@/components/Train";
+import UserName from "@/components/UserName";
 
 Vue.use(Router);
 
@@ -145,6 +146,11 @@ export default new Router({
       path: "/Train",
       name: "Train",
       component: Train
+    },
+    {
+      path: "/UserName",
+      name: "UserName",
+      component: UserName
     }
   ],
   scrollBehavior(to, from, savedposition) {

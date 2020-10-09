@@ -1,13 +1,12 @@
 <template>
-  <!-- 订单详情 -->
-  <div class="query">
+  <div class="username">
     <div class="header">
       <el-row :gutter="10">
         <el-col :xs="3" :sm="3" :md="3" :xl="3" class="left"
           ><i class="el-icon-arrow-left" @click="fun"></i
         ></el-col>
         <el-col :xs="18" :sm="18" :md="18" :xl="18" class="mid"
-          >我的订单</el-col
+          >我的欣欣账号</el-col
         >
         <el-col :xs="3" :sm="3" :md="3" :xl="3" class="right"
           ><i class="el-icon-more" @click="$store.commit('fun1')"></i
@@ -33,42 +32,37 @@
         <p>我的欣欣</p>
       </router-link>
     </div>
-    <div class="content">
-      <router-link to="/Null" v-for="(item, i) in items" :key="i" class="link">
-        <i :class="item.icon"></i>
-        {{ item.text }}
-        <span class="el-icon-arrow-right right"></span>
-      </router-link>
+    <div class="user">
+      <i class="icon"></i>
+      <p>{{ $store.state.UserName }}</p>
     </div>
+    <div class="hello">
+      欢迎您尊敬的{{
+        $store.state.UserName
+      }}用户，我们欣欣旅游将为您旅游全程服务。
+    </div>
+    <img src="../../static/user.jpg" alt="" width="100%" />
+    <About></About>
   </div>
 </template>
 
 <script>
+import About from "@/components/About";
 export default {
-  name: "Query",
-  data() {
-    return {
-      items: [
-        { icon: "icon1", text: "线路订单" },
-        { icon: "icon2", text: "定制游订单" },
-        { icon: "icon3", text: "门票订单" },
-        { icon: "icon4", text: "机票订单" },
-        { icon: "icon5", text: "酒店订单" },
-        { icon: "icon6", text: "旅游服务订单" },
-        { icon: "icon7", text: "其他订单" },
-      ],
-    };
-  },
+  name: "UserName",
   methods: {
     fun() {
-      this.$router.go(-1);
+      this.$router.push({ path: "/" });
     },
   },
+  components: { About },
 };
 </script>
 
 <style scoped lang="less">
-.query {
+.username {
+  width: 100%;
+  overflow: hidden;
   .header {
     width: 100%;
     height: 49px;
@@ -131,54 +125,32 @@ export default {
       }
     }
   }
-  .content {
-    margin-top: 12.266px;
+  .user {
     background-color: #fff;
-    .link {
+    width: 100%;
+    text-align: center;
+    .icon {
       display: block;
-      height: 53px;
-      line-height: 53px;
-      color: black;
-      text-decoration: none;
-      font-size: 20px;
-      padding: 0 12.266px;
-      border-bottom: 1px solid #ddd;
-      border-top: 1px solid #ddd;
-      i {
-        display: inline-block;
-        width: 38px;
-        height: 37px;
-        background-image: url("../../static/icon_query.png");
-        background-size: 20rem;
-        margin: 6.133px 6.133px 0 0;
-        float: left;
-      }
-      .icon1 {
-        background-position: -2.5rem 0;
-      }
-      .icon2 {
-        background-position: -5.8rem 0;
-      }
-      .icon3 {
-        background-position: -11rem -3rem;
-      }
-      .icon4 {
-        background-position: -5.7rem -3rem;
-      }
-      .icon5 {
-        background-position: -8.7rem 0;
-      }
-      .icon6 {
-        background-position: -13.7rem -3rem;
-      }
-      .icon7 {
-        background-position: -12rem 0;
-      }
-      .right {
-        float: right;
-        margin-top: 7px;
-      }
+      width: 100px;
+      height: 100px;
+      background-image: url("../../static/touxiang.jpg");
+      background-size: cover;
+      border-radius: 50px;
+      margin: auto;
     }
+    p {
+      font-size: 24px;
+      color: #f00;
+    }
+  }
+  .hello {
+    font-size: 20px;
+    text-align: center;
+    color: #00bf49;
+    background-color: #fff;
+  }
+  img {
+    background-color: #fff;
   }
 }
 </style>

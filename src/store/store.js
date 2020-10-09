@@ -6,7 +6,9 @@ Vue.use(Vuex);
 const state = {
   show: false,
   HistoryCity: ["三亚", "北京"],
-  city: "三亚"
+  city: "三亚",
+  isLogon: false,
+  UserName: ""
 };
 
 const mutations = {
